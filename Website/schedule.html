@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<!--Jacob Foster
+    10/10/22
+    An Amazing Website-->
+        <title>Amazing Website</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>
+        Schedule a Shoot!
+        </h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="schedule.html">Schedule</a>
+        </nav>
+        <section>
+        <h1>Scheduling Form</h1>
+        <form id="schedule" action="http://www.example.com/payment" method="post">
+            <fieldset id="dates">
+                <legend>Scheduling Information (required)</legend>
+                <label for="day">Day</label>
+                <select id="day" name="day" required>
+                <option value="">-Day-</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+                </select>
+
+
+                <label for="month">Month</label>
+                <select id="month" name="month" required>
+                <option value="">-Month-</option>
+                <option value="1-Jan">1-Jan</option>
+                <option value="2-Feb">2-Feb</option>
+                <option value="3-Mar">3-Mar</option>
+                <option value="4-Apr">4-Apr</option>
+                <option value="5-May">5-May</option>
+                <option value="6-Jun">6-Jun</option>
+                <option value="7-Jul">7-Jul</option>
+                <option value="8-Aug">8-Aug</option>
+                <option value="9-Sep">9-Sep</option>
+                <option value="10-Oct">10-Oct</option>
+                <option value="11-Nov">11-Nov</option>
+                <option value="12-Dec">12-Dec</option>
+                </select>
+
+                <label for="year">Year</label>
+                <select id="year" name="year" required>
+                    <option value="">-Year-</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                </select>
+            </fieldset>
+        </form>
+        <h1>Payment Form</h1>
+        <form  id="payment" action="http://www.example.com/payment" method="post">
+            <fieldset id="billing">
+                <legend>Billing Information (required)</legend>
+                <label for="firstBox">First Name</label>
+                <input type="text" id="firstBox" name="firstBox" required><br>
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname" required><br>
+
+                <label for="street">Street Address</label>
+                <input type="text" id="street" name="street" required><br>
+
+                <label for="street2">Street Address (2)</label>
+                <input type="text" id="street2" name="street2"><br>
+
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" required><br>
+
+                <label for="state">State</label>
+                <input list="statelist" id="state" name="state" required><br>
+
+                <label for="zip">ZIP/Postal Code</label>
+                <input type="text" id="zip" name="zip" pattern="^\d{5}(-\d{4})?$"><br>
+
+                <label for="country">Country</label>
+                <input type="text" id="country" name="country" required><br>
+
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" required pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$"><br>
+
+            <datalist id="statelist">
+               <option value="AL"></option>
+               <option value="AK"></option>
+               <option value="AZ"></option>
+               <option value="AR"></option>
+               <option value="CA"></option>
+               <option value="CO"></option>
+               <option value="CT"></option>
+               <option value="DE"></option>
+               <option value="FL"></option>
+               <option value="GA"></option>
+               <option value="HI"></option>
+               <option value="ID"></option>
+               <option value="IL"></option>
+               <option value="IN"></option>
+               <option value="IA"></option>
+               <option value="KS"></option>
+               <option value="KY"></option>
+               <option value="LA"></option>
+               <option value="ME"></option>
+               <option value="MD"></option>
+               <option value="MA"></option>
+               <option value="MI"></option>
+               <option value="MN"></option>
+               <option value="MS"></option>
+               <option value="MO"></option>
+               <option value="MT"></option>
+               <option value="NE"></option>
+               <option value="NV"></option>
+               <option value="NH"></option>
+               <option value="NJ"></option>
+               <option value="NM"></option>
+               <option value="NY"></option>
+               <option value="NC"></option>
+               <option value="ND"></option>
+               <option value="OH"></option>
+               <option value="OK"></option>
+               <option value="OR"></option>
+               <option value="PA"></option>
+               <option value="RI"></option>
+               <option value="SC"></option>
+               <option value="SD"></option>
+               <option value="TN"></option>
+               <option value="TX"></option>
+               <option value="UT"></option>
+               <option value="VT"></option>
+               <option value="VA"></option>
+               <option value="WA"></option>
+               <option value="WV"></option>
+               <option value="WI"></option>
+               <option value="WY"></option>
+            </datalist>
+            </fieldset>
+            <fieldset id="creditCard">
+                <legend>Credit Card (required)</legend>
+                <label for="cardBox">Credit Card Number</label>
+                <input type="text" id="cardBox" name="cardBox" required pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$">
+                <label for="monthList">Expiration Date</label>
+                <select id="monthList" name="cardMonth" required>
+                    <option value="">-Month-</option>
+                    <option value="1-Jan">1-Jan</option>
+                    <option value="2-Feb">2-Feb</option>
+                    <option value="3-Mar">3-Mar</option>
+                    <option value="4-Apr">4-Apr</option>
+                    <option value="5-May">5-May</option>
+                    <option value="6-Jun">6-Jun</option>
+                    <option value="7-Jul">7-Jul</option>
+                    <option value="8-Aug">8-Aug</option>
+                    <option value="9-Sep">9-Sep</option>
+                    <option value="10-Oct">10-Oct</option>
+                    <option value="11-Nov">11-Nov</option>
+                    <option value="12-Dec">12-Dec</option>
+                </select>
+                <select name="yearList" required>
+                    <option value="">-Year-</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                </select>
+
+                <label for="csc">CSC</label>
+                <input type="text" id="csc" name="csc" pattern="^\d{3}$" placeholder="nnn">
+
+            </fieldset>
+            <button type="submit"><img src="submit.png" alt="next"></button>
+        </form>
+        </section>
+        <footer>
+            Contact Me! | <a href="fakemail@gmail.com">fakeemail@gmail.com</a> | <a href="tel:4171578442">417.157.8442</a>
+        </footer>
+    </body>
+    
+</html>

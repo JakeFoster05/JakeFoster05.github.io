@@ -37,3 +37,7 @@ body {
     color: gray;
     text-decoration: none;
   }
+
+  a :hover{
+    color: darkgray;
+  }
